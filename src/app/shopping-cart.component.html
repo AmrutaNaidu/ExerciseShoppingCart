@@ -1,0 +1,20 @@
+<section class="left">
+    <h2>Products</h2>
+    <ul class="product-list">
+      <li *ngFor="let data of products; let idx = index" 
+      [ngClass]="{selected: productId == idx}"
+      (click)="onClick(idx)">{{data.name}}</li>
+    </ul> 
+  </section>
+  <section class="product-details">
+        <h2>Product Details</h2>
+      <ul> 
+        <li>{{products[productId].name}}</li> 
+        <li>{{products[productId].description}}</li>
+        <li>{{products[productId].price}}</li>
+        <li><img src="{{products[productId].url}}"></li>
+        <li><label>Qty: <input type="number" [(ngModel)]=products[productId].qty (change)="onChange()" /></label></li>
+        <li><button (click)="onPurchase()">Purchase</button></li>
+      </ul>
+  </section>
+  <button (click)="onCart()" class="clear block">Add to Cart</button>

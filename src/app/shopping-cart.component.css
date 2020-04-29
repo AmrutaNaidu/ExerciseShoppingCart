@@ -1,0 +1,42 @@
+.left {
+    float: left;
+    margin-bottom: 20px;
+  }
+  .product-list, .product-details ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  .product-list li {
+    margin: 20px;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  .product-details {
+    float: left;
+  }
+  .product-details img {
+    width: 100px;
+    background: white;
+  }
+  .product-details input { 
+      width: 30px;
+  }
+  .selected {
+    color: darkblue;
+  }
+  .clear {
+    clear: both;
+  }
+  button {
+    background: darkblue;
+    color: white;
+    padding: 10px;
+    border: 0;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+.block {
+    display: block;
+}
